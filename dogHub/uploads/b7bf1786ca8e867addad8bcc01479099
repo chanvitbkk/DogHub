@@ -1,0 +1,27 @@
+Quiz hint Lab 11
+
+- How to save firewall rule into text file?
+: iptables-save > rule.txt
+
+- If no rules are found in firewall rules, what's does firewall do?
+: Receive form everywhere
+
+- How to block incoming ping packet? TCP? UDP? ICMP?
+: iptables -A (INPUT/OUTPUT/FORWARD) -p (tcp/icmp/udp) -s (ipv4) -j DROP 
+
+- What's the command to show current firewall rules?
+: iptables -nvL
+
+- What's the command to forward all TCP/ping packet from 1 pc and drop everything else?
+: iptables -A FORWARD -p tcp -s (ipv4 1 pc) -j ACCEPT
+  iptables -A FORWARD -p icmp -j ACCEPT
+  iptables -P FORWARD DROP
+
+- What's the command to block access to website like www.google.com?
+: iptables -A (INPUT/OUTPUT) -p  tcp -d www.google.com -j DROP
+
+- What's the name of strategy which accept everything but drop all malicious packet?
+: Backlisting
+
+- How to drop all forwarding UDP packets from 192.164.20.2/24?
+: iptables -A FORWARD -p udp -s 192.164.20.2/24 -j DROP
