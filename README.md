@@ -3,7 +3,7 @@
 ### Installation required 
 1. IPFS Desktop https://github.com/ipfs/ipfs-desktop/releases
 2. MAMP or XAMP (I'm using MAMP) for localhost
-
+3. Project's folder in htdocs (/Applications/MAMP/htdocs)
 
 ### Commands
 
