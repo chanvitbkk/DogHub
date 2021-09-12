@@ -1,4 +1,6 @@
-# DogHub Decentralies e-Learning System :tada:
+# DogHUB Decentralies e-Learning System :tada:
+
+DogHUB was implemented via a decentralised system to let the teacher or student see the assignment in the classroom. The user can upload any file to the system by uploading a file and get the hash key from the uploading process.
 
 ### Installation required :tada
 1. IPFS Desktop https://github.com/ipfs/ipfs-desktop/releases
